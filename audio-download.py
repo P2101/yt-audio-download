@@ -9,7 +9,7 @@ yt = YouTube(
 # extract only audio
 video = yt.streams.filter(only_audio=True).first()
   
-# check for destination to save file
+# check for destination to save file, I've already created a folder called music
 print("Enter the destination (leave blank for current directory)")
 destination = str(input(">> ")) or '.\music'
   
